@@ -66,7 +66,7 @@ for ($i = 1; $i <= 4; $i++) {
 	$sql_get_billsec[] = "SELECT
 							`datetime_event`,
 							SUM(`billsec`) AS `sec`
-						  FROM `{$database}`.`[[TABLE_NAME]]`
+						  FROM `Process`.`[[TABLE_NAME]]`
 						  WHERE `datetime_event` BETWEEN '{$time}' AND '{$last_time}'";
 	$last_time = $time;
 }
